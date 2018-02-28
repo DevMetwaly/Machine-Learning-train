@@ -36,7 +36,7 @@ df.sex = le.fit_transform(df.sex)
 X=df.iloc[:,:df.shape[1]-1]
 Y=df.iloc[:,df.shape[1]-1]
 
-def fn(X,Y):
+"""def fn(X,Y):
     x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.33, random_state=1) 
     linReg=LinearRegression()
     linReg.fit(x_train,y_train)
@@ -63,6 +63,7 @@ def fn4(X,Y):
     model.fit(x_train, y_train)
     y_predict=model.predict(x_test)
     print(np.sqrt(mean_squared_error(y_test,y_predict)))
+"""
     
 def fn5(X,Y):
    
@@ -74,7 +75,7 @@ def fn5(X,Y):
     print(np.sqrt(mean_squared_error(y_test,y_predict)))
 
             
-fn(X,Y)
+#fn(X,Y)
 #fn2(X,Y)
 #fn3(X,Y)
 #fn4(X,Y)
